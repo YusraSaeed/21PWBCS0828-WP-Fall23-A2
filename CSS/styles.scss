@@ -1,0 +1,191 @@
+$base-color: burlywood;
+$button-color: rgb(175, 123, 51);
+$font: Verdana, Geneva, Tahoma, sans-serif;
+
+@mixin button-style{
+    padding: 10px 20px;
+        font-size: 16px;
+        color: black;
+        font-weight: 200;
+        border: none;
+        background-color: $base-color;
+        border: 0;
+        border-radius: 15px;
+        transition: transform 0.3s ease; /* Adding transition for smooth effect */
+        &:hover{
+            transform: scale(1.1); /* Scale the button on hover */
+            background-color: rgb(168, 112, 38);
+
+        }
+}
+body{
+    font-family: $font;
+}
+#nav-style{
+    background-color: $base-color;
+    color: pink;
+    font-size: large;
+    font-weight: bold;
+    
+}
+nav{
+    a{
+        &:hover{
+            background-color:$button-color;
+        }
+    }
+    .btn{
+        //background-color: $base-color;
+        @include button-style();
+    }
+}
+
+//Carousel
+.carousel{
+    max-height: 600px;
+}
+.carousel-item {
+    height: 600px; /* Adjust the value as needed */
+    img{
+        max-height: 100%;
+    } 
+}
+h1{
+    padding: 15px 0px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+    // font-style: italic;
+    font-family: $font;
+    color: $button-color;
+    font-size: 30px;
+}
+.container{
+    display:flex;
+    justify-content: center;
+}
+#container{
+    display:flex;
+    justify-content: center;
+}
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 10px solid $base-color;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+    box-shadow: 0 15px 30px 1px grey;
+    height: auto;
+    
+}
+.card-body {
+    text-align: center;
+    h5{
+        padding-top: 10px;
+    }
+    img {
+        width: 100%;
+        height: 350px;  
+    }
+    .expand-btn {
+        @include button-style;
+    }
+}
+#footer {
+    background-color: $base-color;
+    margin-top: 90px;
+    .footer-section {
+        text-align: center;
+        padding: 20px;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+p{
+    text-align: center;
+    
+}
+#table-content {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Full viewport height */
+    /* Style the table */
+
+}
+table {
+    border: 1px solid $button-color;
+    border-collapse: collapse; /* Collapse the borders */
+    width: 80%; /* Use only 80% of the container's width */
+    margin: 20px auto; /* Top and bottom margin 20px, left and right auto */
+    th, td {
+        border: 1px solid $button-color;
+        padding: 10px;
+        text-align: left;
+    }
+    th {
+        background-color: $base-color; /* A light grey background for headers */
+    }
+    .expand-btn {
+        @include button-style();
+    }
+    
+}
+
+#receipt, .button{
+    display: block; /* Make it a block-level element */
+    margin: 0 auto; /* Center horizontally using margin */
+    text-align: center; /* Center text inside the button */
+    .expand-btn{
+        @include button-style();
+    }
+}
+
+.payment-confirmation {
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    p{
+        color:$base-color;
+        font-size: 20px;
+    }
+}
+.contact-info{
+    a{
+        color: $button-color;
+        text-decoration: none;
+        &:hover{
+            color: $base-color;
+        }
+    }
+}
+.contact-form{
+    display: block; /* Make it a block-level element */
+    margin: 0 auto; /* Center horizontally using margin */
+    text-align: center; /* Center text inside the button */
+
+    .expand-btn{
+        @include button-style();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

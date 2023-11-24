@@ -1,0 +1,213 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#nav-style {
+  background-color: burlywood;
+  color: pink;
+  font-size: large;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: rgb(175, 123, 51);
+}
+nav .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  font-weight: 200;
+  border: none;
+  background-color: burlywood;
+  border: 0;
+  border-radius: 15px;
+  transition: transform 0.3s ease; /* Adding transition for smooth effect */
+}
+nav .btn:hover {
+  transform: scale(1.1); /* Scale the button on hover */
+  background-color: rgb(168, 112, 38);
+}
+
+.carousel {
+  max-height: 600px;
+}
+
+.carousel-item {
+  height: 600px; /* Adjust the value as needed */
+}
+.carousel-item img {
+  max-height: 100%;
+}
+
+h1 {
+  padding: 15px 0px;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(175, 123, 51);
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 10px solid burlywood;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 15px 30px 1px grey;
+  height: auto;
+}
+
+.card-body {
+  text-align: center;
+}
+.card-body h5 {
+  padding-top: 10px;
+}
+.card-body img {
+  width: 100%;
+  height: 350px;
+}
+.card-body .expand-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  font-weight: 200;
+  border: none;
+  background-color: burlywood;
+  border: 0;
+  border-radius: 15px;
+  transition: transform 0.3s ease; /* Adding transition for smooth effect */
+}
+.card-body .expand-btn:hover {
+  transform: scale(1.1); /* Scale the button on hover */
+  background-color: rgb(168, 112, 38);
+}
+
+#footer {
+  background-color: burlywood;
+  margin-top: 90px;
+}
+#footer .footer-section {
+  text-align: center;
+  padding: 20px;
+}
+#footer .footer-section img {
+  width: 30px;
+  height: 30px;
+}
+
+p {
+  text-align: center;
+}
+
+#table-content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Full viewport height */
+  /* Style the table */
+}
+
+table {
+  border: 1px solid rgb(175, 123, 51);
+  border-collapse: collapse; /* Collapse the borders */
+  width: 80%; /* Use only 80% of the container's width */
+  margin: 20px auto; /* Top and bottom margin 20px, left and right auto */
+}
+table th, table td {
+  border: 1px solid rgb(175, 123, 51);
+  padding: 10px;
+  text-align: left;
+}
+table th {
+  background-color: burlywood; /* A light grey background for headers */
+}
+table .expand-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  font-weight: 200;
+  border: none;
+  background-color: burlywood;
+  border: 0;
+  border-radius: 15px;
+  transition: transform 0.3s ease; /* Adding transition for smooth effect */
+}
+table .expand-btn:hover {
+  transform: scale(1.1); /* Scale the button on hover */
+  background-color: rgb(168, 112, 38);
+}
+
+#receipt, .button {
+  display: block; /* Make it a block-level element */
+  margin: 0 auto; /* Center horizontally using margin */
+  text-align: center; /* Center text inside the button */
+}
+#receipt .expand-btn, .button .expand-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  font-weight: 200;
+  border: none;
+  background-color: burlywood;
+  border: 0;
+  border-radius: 15px;
+  transition: transform 0.3s ease; /* Adding transition for smooth effect */
+}
+#receipt .expand-btn:hover, .button .expand-btn:hover {
+  transform: scale(1.1); /* Scale the button on hover */
+  background-color: rgb(168, 112, 38);
+}
+
+.payment-confirmation {
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.payment-confirmation p {
+  color: burlywood;
+  font-size: 20px;
+}
+
+.contact-info a {
+  color: rgb(175, 123, 51);
+  text-decoration: none;
+}
+.contact-info a:hover {
+  color: burlywood;
+}
+
+.contact-form {
+  display: block; /* Make it a block-level element */
+  margin: 0 auto; /* Center horizontally using margin */
+  text-align: center; /* Center text inside the button */
+}
+.contact-form .expand-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  font-weight: 200;
+  border: none;
+  background-color: burlywood;
+  border: 0;
+  border-radius: 15px;
+  transition: transform 0.3s ease; /* Adding transition for smooth effect */
+}
+.contact-form .expand-btn:hover {
+  transform: scale(1.1); /* Scale the button on hover */
+  background-color: rgb(168, 112, 38);
+}/*# sourceMappingURL=styles.css.map */
